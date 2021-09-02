@@ -79,7 +79,6 @@ def wavelet_noising(new_df):
     return recoeffs
 
 #主函数
-# path ='C:\\Users\\Administrator\\Desktop\\data\\08_863628460_0005_0.asc'#数据路径
 path ='./data/ali.xlsx'#数据路径
 
 #提取数据
@@ -87,7 +86,6 @@ path ='./data/ali.xlsx'#数据路径
 data = pd.read_excel(path)
 data = data.iloc[:, 1]
 plt.plot(data)
-# plt.show()
 print(data)
 
 data_denoising = wavelet_noising(data)#调用小波去噪函数
